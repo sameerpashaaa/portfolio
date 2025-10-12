@@ -1,0 +1,723 @@
+<!doctypehtml>
+    <html lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sameer Pasha - Personal portfolio</title>
+    <meta content="Hello there, I am Sameer Pasha and this is my personal portfolio." name="description">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&amp;family=UnifrakturCook:wght@700&amp;display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link href="output.css" rel="stylesheet">
+    <script src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+    <script>((e, t, n, r, c, s) => { e[n] = e[n] || function () { (e[n].q = e[n].q || []).push(arguments) }, (c = t.createElement(r)).async = 1, c.src 
+
+= "https://www.clarity.ms/tag/n6rc2us4rz", (s = t.getElementsByTagName(r)[0]).parentNode.insertBefore(c, s) })(window, document, "clarity", "script")</script>    <body class="bg-brand-dark text-brand-light font-sans antialiased">
+        <div id="cursor-dot"
+            class="fixed top-0 left-0 w-3 h-3 bg-brand-green rounded-full z-[9999] pointer-events-none origin-center transform-gpu scale-0 hidden md:flex items-center justify-center">
+            <span id="cursor-text" class="text-xs text-brand-dark font-semibold opacity-0">View</span></div>
+        <main>
+            <header id="main-header"
+                class="fixed top-0 left-0 w-full p-8 lg:p-12 z-[100] transition-colors duration-500">
+                <div class="max-w-7xl mx-auto flex justify-between items-center text-sm">
+                    <div class="relative">
+                        <div id="header-initial-left" class="flex gap-x-6 text-black"><a href="#Projects" data-cursor-view
+                                class="hover:text-gray-500 transition-colors">Projects</a> <a href="#about" data-cursor-view
+                                class="hover:text-gray-500 transition-colors">About</a> <a href="#vision"
+                                data-cursor-view class="hover:text-gray-500 transition-colors">Vision</a> <a
+                                href="#contact" data-cursor-view
+                                class="hover:text-gray-500 transition-colors">Contact</a></div>
+                        <p id="header-scrolled-left"
+                            class="absolute top-0 left-0 font-bold text-brand-light opacity-0 pointer-events-none"><span
+                                class="md:inline hidden">Sameer Pasha</span> <span
+                                class="md:hidden inline">sameer pasha</span>
+                    </div>
+                    <div class="relative">
+                        <p id="header-initial-right" class="text-black hidden md:block">Machine Learning Engineer
+                        <div id="header-scrolled-right"
+                            class="absolute top-1/2 -translate-y-1/2 md:top-0 md:translate-y-0 right-0 flex gap-x-6 text-brand-light opacity-0 pointer-events-none">
+                            <a href="#Projects" data-cursor-view class="hover:text-gray-400 transition-colors">Projects</a> <a
+                                href="#about" data-cursor-view class="hover:text-gray-400 transition-colors">About</a>
+                            <a href="#vision" data-cursor-view
+                                class="hover:text-gray-500 transition-colors">Vision</a> <a href="#contact"
+                                data-cursor-view class="hover:text-gray-400 transition-colors">Contact</a></div>
+                    </div>
+                </div>
+            </header>
+            <section id="home" data-section-name="home"
+                class="relative min-h-screen w-full p-8 lg:p-12 text-black flex items-center bg-[var(--background-light-brand)]">
+                <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-y-16 pt-32">
+                     <div class="md:col-span-3">
+                        <h1 id="hero-name"
+                            class="text-7xl sm:text-8xl md:text-9xl font-semibold tracking-tighter leading-none gsap-fade-up">
+                            Sameer Pasha</h1>
+                     </div>
+                    <div class="md:col-span-3">
+                        <p class="text-2xl lg:text-3xl max-w-2xl gsap-fade-up">I am an Machine learning engineer with an interest in Deep learning technologies.
+                    </div>
+                    <div class="md:col-start-4 md:col-span-2 flex flex-col gap-8 text-sm text-gray-600">
+                        <p class="gsap-fade-up">Driven by a passion for artificial intelligence and machine learning, I focus on building intelligent solutions that bridge data and innovation, creating technology that truly understands and empowers people. 
+                        <p class="gsap-fade-up">I transform data-driven ideas into intelligent solutions, refining every detail to achieve precision and impact.
+                    </div>
+                </div>
+            </section>
+            <section id="about" data-section-name="about"
+                class="relative min-h-screen w-full px-8 py-16 md:px-16 lg:px-24 flex items-center" data-theme="dark">
+                <div class="w-full max-w-7xl mx-auto grid grid-cols-1 gap-8 md:gap-16 items-start">
+                    <h2 class="text-6xl md:text-8xl text-gray-500 gsap-section-title font-bold">About</h2>
+                    <div class="grid grid-cols1 md:grid-cols-2 gap-12">
+                        <p class="text-3xl md:text-4xl text-white gsap-fade-up">Hello, I'm Sameer 👋 an
+                            AI/Ml engineer based in Hyderabad.I love to travel, lift weights, and create technologies.
+                        <div class="flex flex-col md:flex-row items-start gap-8">
+                            <div class="md:w-1/2">
+                                <img src="images/sameer333.JPG" alt="Sameer Pasha" class="w-full h-auto rounded-ld shadow-lg">
+                            </div>
+                            <p class="md:w-1/2 text-brand-gray gsap-fade-up">I love to collaborate and create software that simplifies
+                                real-worlds tasks. I also love to try out new things and travel. I'm also an avid gamer and
+                                love to attend conventions and events.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Projects" data-section-name="Projects"
+                class="relative min-h-screen w-full px-8 py-16 md:px-16 lg:px-24 flex items-center">
+                <div class="w-full max-w-7xl mx-auto grid grid-cols-1 gap-8 md:gap-16 items-start">
+                    <h2 class="text-6xl md:text-8xl text-gray-500 gsap-section-title font-bold">Projects</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative">
+                        <p class="text-3xl md:text-4xl text-white gsap-fade-up h-fit lg:sticky top-[10rem]">Check out
+                            what I've been working on.
+                        <div class="flex flex-col"><a href="https://github.com/sameerpashaaa/StackMind" data-cursor-view
+                                class="block py-12 border-b border-gray-800 gsap-fade-up group" target="_blank"><span
+                                    class="text-4xl lg:text-sm text-gray-600 mb-4 block">01</span>
+                                <h3
+                                    class="text-3xl md:text-5xl xl:text-7xl font-medium text-white mb-4 transition-colors group-hover:text-brand-green">
+                                    StackMind</h3>
+                                <p class="text-brand-gray max-w-md">A multi-modal problem solving tool with reasoning
+                                    powered by AI(Mistral API).</p>
+                            </a><a href="https://github.com/sameerpashaaa/ANPR" data-cursor-view
+                                class="block py-12 border-b border-gray-800 gsap-fade-up group" target="_blank"><span
+                                    class="text-4xl lg:text-sm text-gray-600 mb-4 block">02</span>
+                                <h3
+                                    class="text-3xl md:text-5xl xl:text-7xl font-medium text-white mb-4 transition-colors group-hover:text-brand-green">
+                                    ANPR</h3>
+                                <p class="text-brand-gray max-w-md">A automatic number plate recognition software powered by a Darknet model trained using 15,000+ images.</p>
+                            </a><a href="https://github.com/sameerpashaaa/MyResume" data-cursor-view
+                                class="block py-12 border-b border-gray-800 gsap-fade-up group" target="_blank"><span
+                                    class="text-4xl lg:text-sm text-gray-600 mb-4 block">03</span>
+                                <h3
+                                    class="text-3xl md:text-5xl xl:text-7xl font-medium text-white mb-4 transition-colors group-hover:text-brand-green">
+                                    My Resume</h3>
+                                <p class="text-brand-gray max-w-md">My resume with detailed information about my Projects.</p>
+                            </a></div>
+                    </div>
+                </div>
+            </section>
+            <section id="Skills" data-section-name="Skills"
+                class="relative w-full px-8 py-16 md:px-16 lg:px-24 flex items-center">
+                <div class="w-full max-w-7xl mx-auto grid grid-cols-1 gap-8 items-start">
+                    <h2 class="text-6xl md:text-8xl text-gray-500 gsap-section-title font-bold">Skills</h2>
+                    <div class="">
+                        <p class="text-3xl md:text-4xl text-white gsap-fade-up">Thinking about working with me? Check
+                            out what I can do below and see how I can help you👇
+                        <div class="flex flex-col gap-24 mt-8">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 gsap-fade-up">
+                                <div class="flex flex-col"><span class="text-sm text-gray-600 mb-4">01</span>
+                                    <h3 class="font-mono text-4xl md:text-5xl text-white">&lt;Coding /&gt;</h3>
+                                    <p class="text-brand-gray mt-4 text-sm">These are all of the programming languages I
+                                        have experience with.
+                                </div>
+                                <ul class="md:col-span-2 flex flex-col">
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">Python</span> <span class="text-gray-600"><img
+                                                src="images\python-com.svg" loading="lazy" alt=""
+                                                class="image-pro invert"></span>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">Java</span> <span class="text-gray-600"><img
+                                                src="images/java-logo.svg" loading="lazy" alt=""
+                                                class="image-pro"></span>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">SQL</span> <span class="text-gray-600"><img
+                                                src="images/database-512.svg" loading="lazy" alt="" class="image-pro"></span>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">HTML</span> <span class="text-gray-600"><img
+                                                src="images/html-logo.svg" loading="lazy" alt="" class="image-pro"></span>
+                                    <li class="flex justify-between items-center py-4"><span
+                                            class="text-lg">CSS</span> <span class="text-gray-600"><img
+                                                src="images/css_logo.svg" loading="lazy" alt=""
+                                                class="image-pro"></span>
+                                </ul>
+                            </div>
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 gsap-fade-up">
+                                <div class="flex flex-col"><span class="text-sm text-gray-600 mb-4">02</span>
+                                    <h3 class="font-mono text-4xl md:text-5xl text-white">{ DevOps }</h3>
+                                    <p class="text-brand-gray mt-4 text-sm">Tools I Projects with to deploy the apps & scale
+                                        it.
+                                </div>
+                                <ul class="md:col-span-2 flex flex-col">
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">Oracle Cloud</span> <span class="text-gray-600"><img
+                                                src="images/oracl-logo.svg" loading="lazy" alt="" class="image-pro"></span>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">Docker</span> <span class="text-gray-600"><img
+                                                src="images/docker.svg" loading="lazy" alt="" class="image-pro"></span>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">Github Actions</span> <span class="text-gray-600"><img
+                                                src="images/github.svg" loading="lazy" alt="" class="image-pro"></span>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">AWS</span> <span class="text-gray-600"><img
+                                                src="images/aws.svg" loading="lazy" alt=""
+                                                class="image-pro"></span>
+                                    <li class="flex justify-between items-center py-4"><span class="text-lg">Jupyter</span>
+                                        <span class="text-gray-600"><img src="images/jupyter-logo.svg" loading="lazy" alt=""
+                                                class="image-pro"></span>
+                                </ul>
+                            </div>
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 gsap-fade-up">
+                                <div class="flex flex-col"><span class="text-sm text-gray-600 mb-4">03</span>
+                                    <h3 class="font-display text-5xl md:text-6xl text-white">Certifications</h3>
+                                    <p class="text-brand-gray mt-4 text-sm">Certifications I have acquired for the
+                                        programming languages.
+                                </div>
+                                <ul class="md:col-span-2 flex flex-col">
+                                    <li><a href="https://www.udemy.com/certificate/UC-a0b05553-072c-436f-a7c9-1c626db2c80a/"
+                                            target="_blank"
+                                            class="flex justify-between items-center py-4 border-b border-gray-800 hover:text-brand-green transition-colors"><span
+                                                class="text-lg">Python</span> <span class="text-gray-600"><img
+                                                    src="images/arrow-up-right-solid.svg" loading="lazy" alt=""
+                                                    class="arrow-link"></span></a>
+                                    <li><a class="flex justify-between items-center py-4 border-b border-gray-800 hover:text-brand-green transition-colors"
+                                            href="https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC7280051&trackId=OCI25AICFA&key=7c9ef10855fa48d07c09356be919478afe616129"
+                                            target="_blank"><span class="text-lg">Oracle Cloud Infrastructure</span> <span
+                                                class="text-gray-600"><img src="images/arrow-up-right-solid.svg"
+                                                    loading="lazy" alt="" class="arrow-link"></span></a>
+                                    <li><a class="flex justify-between items-center py-4 border-b border-gray-800 hover:text-brand-green transition-colors"
+                                            href="https://www.theforage.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_Y7JWBqjTKgAzmiE6D_1752990701382_completion_certificate.pdf"
+                                            target="_blank"><span class="text-lg">AWS Solutions Architect</span> <span
+                                                class="text-gray-600"><img src="images/arrow-up-right-solid.svg"
+                                                    loading="lazy" alt="" class="arrow-link"></span></a>
+                                    <li><a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_Y7JWBqjTKgAzmiE6D_1752924185583_completion_certificate.pdf"
+                                            target="_blank"
+                                            class="flex justify-between items-center py-4 border-b border-gray-800 hover:text-brand-green transition-colors"><span
+                                                class="text-lg">Deloitte Tech Support</span> <span
+                                                class="text-gray-600"><img src="images/arrow-up-right-solid.svg"
+                                                    loading="lazy" alt="" class="arrow-link"></span></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="vision" data-section-name="vision"
+                class="relative w-full px-8 py-16 md:px-16 lg:px-24 flex items-center overflow-hidden">
+                <div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="z-10">
+                        <h2 class="text-6xl md:text-8xl text-gray-500 gsap-section-title font-bold">Vision</h2>
+                        <div class="mt-12 flex flex-col gap-8">
+                            <p class="text-3xl md:text-4xl text-brand-green gsap-fade-up font-mono"> The best way to predict the future is to engineer it.
+                            <p class="text-brand-gray max-w-lg gsap-fade-up">My vision is to become a leading AI/ML engineer who builds intelligent systems that truly connect the world — not just digitally, but through shared access to knowledge, opportunity, and innovation. I believe AI has the power to bridge gaps between people, cultures, and industries by making technology more inclusive and accessible.
+                        </div>
+                    </div>
+                    <div class="hidden md:block relative min-h-[400px] lg:min-h-[600px] -mx-16 lg:mx-0">
+                        <div id="globe-viz" class="absolute inset-0"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" data-section-name="contact"
+                class="min-h-[70svh] lg:min-h-[120vh] flex flex-col p-8 lg:p-12 relative">
+                <div class="flex flex-col items-center gap-12 pt-12 w-full">
+                    <div id="robo-container" data-w-id="f6618769-8942-5196-c2a1-07d3bb1949d6"
+                        class="spline-scene-3 top-0 absolute -z-10 hidden md:block" data-animation-type="spline"
+                        data-spline-url="https://prod.spline.design/8yucdOU58ZA1qCif/scene.splinecode"><canvas></canvas>
+                    </div>
+                    <nav class="w-full">
+                        <div class="flex justify-center items-center gap-x-6 text-5xl text-brand-gray gsap-fade-up"><a
+                                href="https://github.com/sameerpashaaa" target="_blank" data-cursor-view
+                                class="hover:text-white transition-colors">github</a> <a
+                                href="mailto:mohammedsameerpasha128@gmail.com" target="_blank" data-cursor-view
+                                class="hover:text-white transition-colors">mail</a> <a
+                                href="https://www.linkedin.com/in/sameer-pashaaa/" target="_blank" data-cursor-view
+                                class="hover:text-white transition-colors">linkedin</a></div>
+                    </nav>
+                </div>
+                <div class="flex-grow flex items-center justify-center">
+                    <h1 id="footer-text"
+                        class="text-white text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[14rem] font-black tracking-tighter leading-none">
+                        <span class="footer-char"><span class="footer-char-stroke">s</span><span
+                                class="footer-char-fill">s</span></span><span class="footer-char"><span
+                                class="footer-char-stroke">a</span><span class="footer-char-fill">a</span></span><span
+                            class="footer-char"><span class="footer-char-stroke">m</span><span
+                                class="footer-char-fill">m</span></span><span class="footer-char"><span
+                                class="footer-char-stroke">e</span><span class="footer-char-fill">e</span></span><span
+                            class="footer-char"><span class="footer-char-stroke">e</span><span
+                                class="footer-char-fill">e</span></span><span class="footer-char"><span
+                            class="footer-char"><span class="footer-char-stroke">r</span><span class="footer-char-fill">r</span></span></h1>
+                </div>
+            
+                <div class="w-full text-center pb-4">
+                    <p class="text-sm text-brand-gray">&copy; 2024 Sameer Pasha. All Rights Reserved.
+                </div>
+            </section>
+        </main>
+        <script>
+
+            function loadScript(src) {
+                return new Promise((resolve, reject) => {
+                    var script = document.createElement("script");
+                    script.src = src;
+                    script.async = true;
+                    script.onload = () => {
+                        console.log("[Debug] Script loaded:", src);
+                        resolve();
+                    };
+                    script.onerror = () => {
+                        console.error("[Debug] Script failed to load:", src);
+                        reject(new Error("Failed to load " + src));
+                    };
+                    document.head.appendChild(script);
+                });
+            }
+
+            async function ensureGlobeLibs() {
+                console.log("[Debug] Ensuring Globe libraries...");
+                
+                if (window.Globe) {
+                    console.log("[Debug] Globe already available");
+                    return;
+                }
+                
+                if (!window.THREE) {
+                    console.log("[Debug] Loading Three.js...");
+                    await loadScript("https://unpkg.com/three@0.160.0/build/three.min.js");
+                    console.log("[Debug] Three.js loaded, THREE available:", !!window.THREE);
+                }
+                
+                console.log("[Debug] Loading Globe.gl...");
+                await loadScript("https://unpkg.com/globe.gl@2.32.0/dist/globe.gl.min.js");
+                console.log("[Debug] Globe.gl loaded, Globe available:", !!window.Globe);
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                console.log("[Debug] DOMContentLoaded fired");
+                
+                function createParticles(element, count = 28) {
+                    var rect = element.getBoundingClientRect();
+                    var centerX = rect.left + rect.width / 2;
+                    var centerY = rect.top + rect.height / 2;
+                    
+                    for (let i = 0; i < count; i++) {
+                        let particle = document.createElement("span");
+                        particle.className = "particle";
+                        particle.style.left = centerX + "px";
+                        particle.style.top = centerY + "px";
+                        document.body.appendChild(particle);
+                        
+                        var angle = Math.random() * Math.PI * 2;
+                        var distance = 50 + 120 * Math.random();
+                        var x = Math.cos(angle) * distance;
+                        var y = Math.sin(angle) * distance;
+                        
+                        gsap.fromTo(particle, 
+                            { x: 0, y: 0, scale: gsap.utils.random(.6, 1.2), opacity: 1 }, 
+                            { x: x, y: y, opacity: 0, duration: gsap.utils.random(.35, .6), ease: "power2.out", onComplete: () => particle.remove() }
+                        );
+                    }
+                }
+
+                function glitchText(element, originalText, duration = 1000) {
+                    let charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*{}[]<>/\\|";
+                    let textLength = originalText.length;
+                    gsap.parseEase("power2.out");
+                    let startTime = performance.now();
+                    
+                    element.classList.add("glitch");
+                    createParticles(element);
+                    setTimeout(() => createParticles(element, 22), 120);
+                    
+                    requestAnimationFrame(function animate(currentTime) {
+                        if (Math.min(1, Math.max(0, (currentTime - startTime) / duration)) < 1) {
+                            let scrambledText = "";
+                            for (let i = 0; i < textLength; i++) {
+                                var char = originalText[i];
+                                scrambledText += (char === " ") ? " " : charset[Math.floor(Math.random() * charset.length)];
+                            }
+                            element.textContent = scrambledText;
+                            requestAnimationFrame(animate);
+                        } else {
+                            element.textContent = originalText;
+                            element.classList.remove("glitch");
+                        }
+                    });
+                }
+
+                gsap.registerPlugin(ScrollTrigger);
+                
+                let cursor = document.getElementById("cursor-dot");
+                let cursorText = document.getElementById("cursor-text");
+                
+                if (!("ontouchstart" in window || 0 < navigator.maxTouchPoints)) {
+                    let mouseX = 0, mouseY = 0, posX = 0, posY = 0;
+                    gsap.set(cursor, { xPercent: -50, yPercent: -50 });
+                    
+                    window.addEventListener("mousemove", e => {
+                        mouseX = e.clientX;
+                        mouseY = e.clientY;
+                    });
+                    
+                    gsap.ticker.add(() => {
+                        var deltaX = mouseX - posX;
+                        var deltaY = mouseY - posY;
+                        posX += .15 * deltaX;
+                        posY += .15 * deltaY;
+                        gsap.set(cursor, { x: posX, y: posY });
+                    });
+                    
+                    document.addEventListener("mouseenter", () => {
+                        gsap.to(cursor, { scale: 1, duration: .3, ease: "power3.out" });
+                    });
+                    
+                    document.addEventListener("mouseleave", () => {
+                        gsap.to(cursor, { scale: 0, duration: .3, ease: "power3.out" });
+                    });
+                    
+                    var cursorElements = document.querySelectorAll("[data-cursor-view]");
+                    let updateCursorTextScale = () => {
+                        var scale = gsap.getProperty(cursor, "scale") || 1;
+                        gsap.set(cursorText, { scale: 1 / scale });
+                    };
+                    let cursorTween = null;
+                    
+                    cursorElements.forEach(el => {
+                        el.addEventListener("mouseenter", () => {
+                            var isDark = !(!el.closest('[data-theme="dark"]') && !document.querySelector('#main-header[data-theme="dark"]')) ? "#ffffff" : "#1c1c1c";
+                            cursorTween && cursorTween.kill();
+                            cursorTween = gsap.to(cursor, { 
+                                duration: .3, scale: 4, backgroundColor: "#26d137", ease: "power3.out", 
+                                onUpdate: updateCursorTextScale, onComplete: updateCursorTextScale 
+                            });
+                            gsap.to(cursorText, { duration: .25, opacity: 1, color: isDark, ease: "power3.out" });
+                            updateCursorTextScale();
+                        });
+                        
+                        el.addEventListener("mouseleave", () => {
+                            cursorTween && cursorTween.kill();
+                            cursorTween = gsap.to(cursor, { 
+                                duration: .3, scale: 1, backgroundColor: "#39ff14", ease: "power3.out", 
+                                onUpdate: updateCursorTextScale, onComplete: () => {
+                                    gsap.set(cursorText, { scale: 1 });
+                                }
+                            });
+                            gsap.to(cursorText, { duration: .25, opacity: 0, ease: "power3.out" });
+                        });
+                    });
+                    
+                    document.querySelectorAll("[data-cursor-magnetic]").forEach(magneticEl => {
+                        let rect = magneticEl.getBoundingClientRect();
+                        window.addEventListener("resize", () => {
+                            rect = magneticEl.getBoundingClientRect();
+                        });
+                        
+                        magneticEl.addEventListener("mousemove", e => {
+                            var { clientX: x, clientY: y } = e;
+                            var { left, top, width, height } = rect;
+                            gsap.to(magneticEl, { 
+                                x: .3 * (x - (left + width / 2)), 
+                                y: .3 * (y - (top + height / 2)), 
+                                duration: .5, ease: "power3.out" 
+                            });
+                        });
+                        
+                        magneticEl.addEventListener("mouseleave", () => {
+                            gsap.to(magneticEl, { x: 0, y: 0, duration: .7, ease: "elastic.out(1, 0.5)" });
+                        });
+                    });
+                }
+                
+                gsap.timeline({ defaults: { duration: .8, ease: "power3.out", autoAlpha: 1 } })
+                    .fromTo("#home .gsap-fade-up", { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, stagger: .1 });
+                
+                var heroName = document.getElementById("hero-name");
+                if (heroName) {
+                    var originalText = heroName.textContent.trim();
+                    glitchText(heroName, originalText, 400);
+                }
+                
+                gsap.utils.toArray("section:not(#home)").forEach(section => {
+                    var elements = section.querySelectorAll(".gsap-fade-up");
+                    if (elements.length !== 0) {
+                        gsap.fromTo(elements, 
+                            { y: 30, autoAlpha: 0 }, 
+                            { y: 0, autoAlpha: 1, stagger: .1, duration: .8, ease: "power3.out", 
+                              scrollTrigger: { trigger: section, start: "top 80%", toggleActions: "restart none restart none" } }
+                        );
+                    }
+                });
+                
+                gsap.utils.toArray(".gsap-section-title").forEach(title => {
+                    gsap.set(title, { autoAlpha: 0, y: 30 });
+                    var timeline = gsap.timeline({ 
+                        scrollTrigger: { trigger: title.closest("section"), start: "top bottom", end: "bottom top", scrub: 1.2 } 
+                    });
+                    timeline.to(title, { autoAlpha: 1, y: 0, duration: .1, ease: "power2.out" });
+                    timeline.to(title, { y: -80, ease: "none" }, ">");
+                });
+                
+                let header = document.getElementById("main-header");
+                let headerInitialLeft = document.getElementById("header-initial-left");
+                let headerInitialRight = document.getElementById("header-initial-right");
+                let headerScrolledLeft = document.getElementById("header-scrolled-left");
+                let headerScrolledRight = document.getElementById("header-scrolled-right");
+                
+                ScrollTrigger.create({
+                    trigger: "#home",
+                    start: "bottom top",
+                    onEnter: () => {
+                        headerScrolledLeft.classList.remove("pointer-events-none");
+                        headerScrolledRight.classList.remove("pointer-events-none");
+                        headerInitialLeft.classList.add("pointer-events-none");
+                        headerInitialRight.classList.add("pointer-events-none");
+                        gsap.to([headerInitialLeft, headerInitialRight], { autoAlpha: 0, duration: .3 });
+                        gsap.to([headerScrolledLeft, headerScrolledRight], { autoAlpha: 1, duration: .3, delay: .1 });
+                        gsap.to(header, { backgroundColor: "#1c1c1c", duration: .4 });
+                        header.setAttribute("data-theme", "dark");
+                    },
+                    onLeaveBack: () => {
+                        headerInitialLeft.classList.remove("pointer-events-none");
+                        headerInitialRight.classList.remove("pointer-events-none");
+                        headerScrolledLeft.classList.add("pointer-events-none");
+                        headerScrolledRight.classList.add("pointer-events-none");
+                        gsap.to([headerScrolledLeft, headerScrolledRight], { autoAlpha: 0, duration: .3 });
+                        gsap.to([headerInitialLeft, headerInitialRight], { autoAlpha: 1, duration: .3, delay: .1 });
+                        gsap.to(header, { backgroundColor: "transparent", duration: .4 });
+                        header.removeAttribute("data-theme");
+                    }
+                });
+            });
+            
+            // Globe initialization code
+            (() => {
+                var globeSection;
+                if (window.matchMedia("(min-width: 768px)").matches) {
+                    (async () => {
+                        try {
+                            let globeContainer = document.getElementById("globe-viz");
+                            let countriesGeoJson = null;
+                            let countriesPromise = null;
+                            let globeInstance = null;
+                            
+                            function disposeMaterial(material) {
+                                if (material) {
+                                    [material.map, material.alphaMap, material.aoMap, material.bumpMap, 
+                                     material.displacementMap, material.emissiveMap, material.envMap, 
+                                     material.lightMap, material.metalnessMap, material.normalMap, 
+                                     material.roughnessMap].forEach(map => map && map.dispose && map.dispose());
+                                    material.dispose && material.dispose();
+                                }
+                            }
+                            
+                            async function initGlobe() {
+                                if (!globeContainer || globeInstance) {
+                                    if (globeInstance) console.log("[Globe] Already initialized. Skipping init.");
+                                    return;
+                                }
+                                
+                                try {
+                                    var geojson = await (countriesGeoJson || (countriesPromise || (
+                                        console.log("[Globe] Fetching countries geojson..."),
+                                        countriesPromise = fetch("https://unpkg.com/globe.gl@2.32.0/example/datasets/ne_110m_admin_0_countries.geojson")
+                                            .then(response => {
+                                                if (response.ok) return response.json();
+                                                throw new Error("HTTP " + response.status);
+                                            })
+                                            .then(data => {
+                                                countriesGeoJson = data;
+                                                console.log("[Globe] Countries geojson fetched and cached.");
+                                                return data;
+                                            })
+                                            .catch(error => {
+                                                countriesPromise = null;
+                                                throw error;
+                                            })
+                                    ), console.log("[Globe] Using cached countries geojson."), countriesPromise));
+                                    
+                                    let originCities = [{ lat: 1.3521, lng: 103.8198, name: "Singapore" }, 
+                                                       { lat: 20.5937, lng: 78.9629, name: "India" }];
+                                    let destinationCities = [{ lat: 51.5072, lng: -.1276, name: "London" }, 
+                                                            { lat: 40.7128, lng: -74.006, name: "New York" }, 
+                                                            { lat: 35.6762, lng: 139.6503, name: "Tokyo" }, 
+                                    { lat: 34.0522, lng: -118.2437, name: "Los Angeles" }, 
+                                    { lat: 50.1109, lng: 8.6821, name: "Frankfurt" }, 
+                                    { lat: -33.8688, lng: 151.2093, name: "Sydney" }, 
+                                    { lat: -23.5505, lng: -46.6333, name: "São Paulo" }];
+                                    
+                                    var arcs = Array.from({ length: 15 }, () => {
+                                        var origin = originCities[Math.floor(Math.random() * originCities.length)];
+                                        var destination = destinationCities[Math.floor(Math.random() * destinationCities.length)];
+                                        return { startLat: origin.lat, startLng: origin.lng, endLat: destination.lat, endLng: destination.lng, color: "#39ff14" };
+                                    });
+                                    
+                                    var points = [...originCities, ...destinationCities];
+                                    
+                                    globeInstance = Globe()(globeContainer)
+                                        .backgroundColor("rgba(0,0,0,0)")
+                                        .polygonsData(geojson.features)
+                                        .polygonCapColor(() => "rgba(44, 44, 44, 0.7)")
+                                        .polygonSideColor(() => "rgba(100, 100, 100, 0.1)")
+                                        .polygonStrokeColor(() => "#3a3a3a")
+                                        .atmosphereColor("#39ff14")
+                                        .atmosphereAltitude(.15)
+                                        .pointsData(points)
+                                        .pointColor(point => originCities.includes(point) ? "#ffffff" : "#39ff14")
+                                        .pointRadius(point => originCities.includes(point) ? .35 : .15)
+                                        .pointAltitude(.01)
+                                        .pointLabel("name")
+                                        .arcsData(arcs)
+                                        .arcColor("color")
+                                        .arcDashLength(.4)
+                                        .arcDashGap(.8)
+                                        .arcDashAnimateTime(() => 2e3 * Math.random() + 1500)
+                                        .arcStroke(.25);
+                                    
+                                    globeInstance.controls().autoRotate = !0;
+                                    globeInstance.controls().autoRotateSpeed = .5;
+                                    globeInstance.controls().enableZoom = !1;
+                                    globeInstance.controls().minPolarAngle = Math.PI / 2.1;
+                                    globeInstance.controls().maxPolarAngle = Math.PI / 2.1;
+                                    console.log("[Globe] Initialized and controls configured.");
+                                    
+                                    let scrollTriggerInstance = ScrollTrigger.create({
+                                        trigger: "#Vision",
+                                        start: "top 85%",
+                                        end: "bottom 15%",
+                                        onToggle: toggle => {
+                                            globeInstance.controls().autoRotate = toggle.isActive;
+                                        }
+                                    });
+                                    
+                                    if (globeContainer && globeContainer.parentElement && globeInstance) {
+                                        var { width: containerWidth, height: containerHeight } = globeContainer.parentElement.getBoundingClientRect();
+                                        globeInstance.width(containerWidth).height(containerHeight);
+                                        console.log(`[Globe] Initial size set to ${Math.round(containerWidth)}x${Math.round(containerHeight)} (no auto-resize).`);
+                                    }
+                                } catch (error) {
+                                    console.error("Failed to initialize globe:", error);
+                                    if (globeContainer) {
+                                        globeContainer.innerHTML = '<p class="text-brand-gray">Could not load Vision visualization.</p>';
+                                    }
+                                }
+                            }
+                            
+                            if (globeContainer && (globeSection = document.getElementById("Vision"))) {
+                                (new IntersectionObserver(entries => {
+                                    entries.forEach(entry => {
+                                        if (entry.isIntersecting) {
+                                            console.log("[Globe][IO] Section near viewport: initializing/resuming...");
+                                            ensureGlobeLibs().then(() => initGlobe()).then(() => {
+                                                try {
+                                                    if (globeInstance && globeInstance.controls) {
+                                                        globeInstance.controls().autoRotate = !0;
+                                                    }
+                                                    console.log("[Globe] Auto-rotate enabled.");
+                                                } catch (error) { }
+                                            });
+                                        } else {
+                                            console.log("[Globe][IO] Section left proximity: pausing and unloading...");
+                                            try {
+                                                if (globeInstance && globeInstance.controls) {
+                                                    globeInstance.controls().autoRotate = !1;
+                                                }
+                                                console.log("[Globe] Auto-rotate disabled.");
+                                            } catch (error) { }
+                                            
+                                            try {
+                                                console.log("[Globe] Cleaning up (unloading) globe...");
+                                                if (scrollTriggerInstance) {
+                                                    scrollTriggerInstance.kill();
+                                                    scrollTriggerInstance = null;
+                                                }
+                                                
+                                                if (globeInstance) {
+                                                    try {
+                                                        if (globeInstance.controls && globeInstance.controls().autoRotate) {
+                                                            globeInstance.controls().autoRotate = !1;
+                                                        }
+                                                    } catch (error) { }
+                                                    
+                                                    try {
+                                                        var scene = globeInstance.scene && globeInstance.scene();
+                                                        var renderer = globeInstance.renderer && globeInstance.renderer();
+                                                        
+                                                        if (scene) {
+                                                            scene.traverse(object => {
+                                                                if (object.geometry && object.geometry.dispose) {
+                                                                    object.geometry.dispose();
+                                                                }
+                                                                if (object.material) {
+                                                                    if (Array.isArray(object.material)) {
+                                                                        object.material.forEach(disposeMaterial);
+                                                                    } else {
+                                                                        disposeMaterial(object.material);
+                                                                    }
+                                                                }
+                                                            });
+                                                        }
+                                                        
+                                                        if (renderer && renderer.dispose) {
+                                                            renderer.dispose();
+                                                        }
+                                                    } catch (error) { }
+                                                }
+                                                
+                                                if (globeContainer) {
+                                                    globeContainer.innerHTML = "";
+                                                }
+                                            } finally {
+                                                globeInstance = null;
+                                                console.log("[Globe] Globe cleaned up.");
+                                            }
+                                        }
+                                    });
+                                }, { root: null, rootMargin: "300px 0px 300px 0px", threshold: 0 })).observe(globeSection);
+                                console.log("[Globe][IO] IntersectionObserver attached with rootMargin=300px.");
+                            }
+                        } catch (error) {
+                            console.error("[Globe] Library load failed:", error);
+                        }
+                    })();
+                } else {
+                    console.log("[Globe] Skipping load on small screens.");
+                    var globeContainer = document.getElementById("globe-viz");
+                    if (globeContainer) {
+                        globeContainer.innerHTML = "";
+                    }
+                }
+            })();
+            
+            // Footer animation
+            let footerFillChars = document.querySelectorAll(".footer-char-fill");
+            if (footerFillChars.length > 0) {
+                gsap.to(footerFillChars, {
+                    clipPath: "inset(0% 0 0 0)",
+                    ease: "none",
+                    stagger: .05,
+                    scrollTrigger: {
+                        trigger: "#contact",
+                        start: "center 80%",
+                        end: "bottom bottom",
+                        scrub: 1.5
+                    }
+                });
+            }
+            
+            // Load Webflow on desktop
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+                    .then(() => loadScript("js/webflow.js"))
+                    .catch(error => console.error("[Webflow] Failed to load:", error));
+            }
+        </script>
+    </body>
+</html>
