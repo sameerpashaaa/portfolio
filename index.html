@@ -298,6 +298,7 @@
                 console.log("[Debug] Loading Globe.gl...");
                 await loadScript("https://unpkg.com/globe.gl@2.32.0/dist/globe.gl.min.js");
                 console.log("[Debug] Globe.gl loaded, Globe available:", !!window.Globe);
+                console.log("[Debug] Globe function type:", typeof Globe);
             }
 
             document.addEventListener("DOMContentLoaded", function () {
@@ -507,6 +508,7 @@
                             let countriesGeoJson = null;
                             let countriesPromise = null;
                             let globeInstance = null;
+                            let scrollTriggerInstance = null; // Declare outside initGlobe
                             
                             function disposeMaterial(material) {
                                 if (material) {
@@ -519,12 +521,14 @@
                             }
                             
                             async function initGlobe() {
+                                console.log("[Globe] initGlobe called");
                                 if (!globeContainer || globeInstance) {
                                     if (globeInstance) console.log("[Globe] Already initialized. Skipping init.");
                                     return;
                                 }
                                 
                                 try {
+                                    console.log("[Globe] Starting globe initialization...");
                                     var geojson = await (countriesGeoJson || (countriesPromise || (
                                         console.log("[Globe] Fetching countries geojson..."),
                                         countriesPromise = fetch("https://unpkg.com/globe.gl@2.32.0/example/datasets/ne_110m_admin_0_countries.geojson")
@@ -561,6 +565,10 @@
                                     
                                     var points = [...originCities, ...destinationCities];
                                     
+                                    console.log("[Globe] Creating Globe instance...");
+                                    console.log("[Globe] Globe function available:", typeof Globe);
+                                    console.log("[Globe] globeContainer:", globeContainer);
+                                    
                                     globeInstance = Globe()(globeContainer)
                                         .backgroundColor("rgba(0,0,0,0)")
                                         .polygonsData(geojson.features)
@@ -588,8 +596,8 @@
                                     globeInstance.controls().maxPolarAngle = Math.PI / 2.1;
                                     console.log("[Globe] Initialized and controls configured.");
                                     
-                                    let scrollTriggerInstance = ScrollTrigger.create({
-                                        trigger: "#Vision",
+                                    scrollTriggerInstance = ScrollTrigger.create({
+                                        trigger: "#vision",
                                         start: "top 85%",
                                         end: "bottom 15%",
                                         onToggle: toggle => {
@@ -610,9 +618,11 @@
                                 }
                             }
                             
-                            if (globeContainer && (globeSection = document.getElementById("Vision"))) {
+                            if (globeContainer && (globeSection = document.getElementById("vision"))) {
+                                console.log("[Globe] Found vision section, setting up IntersectionObserver...");
                                 (new IntersectionObserver(entries => {
                                     entries.forEach(entry => {
+                                        console.log("[Globe] IntersectionObserver triggered, isIntersecting:", entry.isIntersecting);
                                         if (entry.isIntersecting) {
                                             console.log("[Globe][IO] Section near viewport: initializing/resuming...");
                                             ensureGlobeLibs().then(() => initGlobe()).then(() => {
