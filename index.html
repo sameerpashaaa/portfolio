@@ -12,8 +12,28 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Sameer Pasha - Personal portfolio</title>
-    <meta content="Hello there, I am Sameer Pasha and this is my personal portfolio." name="description">
+    <title>Sameer Pasha | AI/ML Engineer & Python Developer | Hyderabad</title>
+    <meta name="description" content="AI/ML engineer and CS student specializing in machine learning, generative AI, and full-stack development. Explore projects in computer vision, LLM applications, and production systems.">
+    <link rel="canonical" href="https://sameerpasha.in/">
+    <meta property="og:title" content="Sameer Pasha | AI/ML Engineer">
+    <meta property="og:description" content="AI/ML engineer specializing in machine learning, generative AI, and full-stack systems.">
+    <meta property="og:image" content="https://sameerpasha.in/images/og-preview.png">
+    <meta property="og:url" content="https://sameerpasha.in/">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sameer Pasha",
+      "url": "https://sameerpasha.in",
+      "jobTitle": "AI/ML Engineer",
+      "sameAs": [
+        "https://github.com/sameerpashaaa",
+        "https://www.linkedin.com/in/sameer-pashaaa/",
+        "https://leetcode.com/u/sameerpashaaa/"
+      ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link
@@ -34,22 +54,23 @@
                 class="fixed top-0 left-0 w-full p-8 lg:p-12 z-[100] transition-colors duration-500">
                 <div class="max-w-7xl mx-auto flex justify-between items-center text-sm">
                     <div class="relative">
-                        <div id="header-initial-left" class="flex gap-x-6 text-black"><a href="#Projects" data-cursor-view
+                        <div id="header-initial-left" class="flex gap-x-6 text-black"><a href="#projects" data-cursor-view
                                 class="hover:text-gray-500 transition-colors">Projects</a> <a href="#about" data-cursor-view
                                 class="hover:text-gray-500 transition-colors">About</a> <a href="#vision"
                                 data-cursor-view class="hover:text-gray-500 transition-colors">Vision</a> <a
                                 href="#contact" data-cursor-view
                                 class="hover:text-gray-500 transition-colors">Contact</a></div>
                         <p id="header-scrolled-left"
-                            class="absolute top-0 left-0 font-bold text-brand-light opacity-0 pointer-events-none"><span
-                                class="md:inline hidden">Sameer Pasha</span> <span
-                                class="md:hidden inline">sameer pasha</span>
+                            class="absolute top-0 left-0 font-bold text-brand-light opacity-0 pointer-events-none">
+                            <span class="md:inline hidden">Sameer Pasha</span>
+                            <span class="md:hidden inline" aria-hidden="true">sameer pasha</span>
+                        </p>
                     </div>
                     <div class="relative">
-                        <p id="header-initial-right" class="text-black hidden md:block">Machine Learning Engineer
+                        <p id="header-initial-right" class="text-black hidden md:block">Machine Learning Engineer</p>
                         <div id="header-scrolled-right"
                             class="absolute top-1/2 -translate-y-1/2 md:top-0 md:translate-y-0 right-0 flex gap-x-6 text-brand-light opacity-0 pointer-events-none">
-                            <a href="#Projects" data-cursor-view class="hover:text-gray-400 transition-colors">Projects</a> <a
+                            <a href="#projects" data-cursor-view class="hover:text-gray-400 transition-colors">Projects</a> <a
                                 href="#about" data-cursor-view class="hover:text-gray-400 transition-colors">About</a>
                             <a href="#vision" data-cursor-view
                                 class="hover:text-gray-500 transition-colors">Vision</a> <a href="#contact"
@@ -65,40 +86,57 @@
                             class="text-7xl sm:text-8xl md:text-9xl font-semibold tracking-tighter leading-none gsap-fade-up">
                             Sameer Pasha</h1>
                      </div>
-                    <div class="md:col-span-3">
-                        <p class="text-2xl lg:text-3xl max-w-2xl gsap-fade-up">I am an Machine learning engineer with an interest in Deep learning technologies.
-                    </div>
+                     <div class="md:col-span-3 flex flex-col gap-6 items-start">
+                        <p class="text-2xl lg:text-3xl max-w-2xl gsap-fade-up">I am a Machine Learning Engineer with an interest in Deep Learning technologies.</p>
+                        <div class="gsap-fade-up">
+                            <a href="resume.pdf" target="_blank" data-cursor-view class="inline-flex items-center gap-x-2 px-6 py-3 bg-brand-dark text-brand-light font-mono text-sm font-semibold rounded-full border border-brand-dark hover:bg-transparent hover:text-brand-dark transition-all duration-300">
+                                <span>Download Resume</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                                </svg>
+                            </a>
+                        </div>
+                     </div>
                     <div class="md:col-start-4 md:col-span-2 flex flex-col gap-8 text-sm text-gray-600">
                         <p class="gsap-fade-up">Driven by a passion for artificial intelligence and machine learning, I focus on building intelligent solutions that bridge data and innovation, creating technology that truly understands and empowers people. 
                         <p class="gsap-fade-up">I transform data-driven ideas into intelligent solutions, refining every detail to achieve precision and impact.
                     </div>
                 </div>
             </section>
-            <section id="about" data-section-name="about"
+             <section id="about" data-section-name="about"
                 class="relative min-h-screen w-full px-8 py-16 md:px-16 lg:px-24 flex items-center" data-theme="dark">
                 <div class="w-full max-w-7xl mx-auto grid grid-cols-1 gap-8 md:gap-16 items-start">
                     <h2 class="text-6xl md:text-8xl text-gray-500 gsap-section-title font-bold">About</h2>
-                    <div class="grid grid-cols1 md:grid-cols-2 gap-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <p class="text-3xl md:text-4xl text-white gsap-fade-up">Hello, I'm Sameer 👋 an
-                            AI/Ml engineer based in Hyderabad.I love to travel, lift weights, and create technologies.
+                            AI/ML Engineer based in Hyderabad. I love to travel, lift weights, and build intelligent technologies.</p>
                         <div class="flex flex-col md:flex-row items-start gap-8">
                             <div class="md:w-1/2">
-                                <img src="images/sameer333.JPG" alt="Sameer Pasha" class="w-full h-auto rounded-ld shadow-lg">
+                                <img src="images/sameer333.JPG" alt="Sameer Pasha" class="w-full h-auto rounded-lg shadow-lg">
                             </div>
-                            <p class="md:w-1/2 text-brand-gray gsap-fade-up">I love to collaborate and create software that simplifies
-                                real-worlds tasks. I also love to try out new things and travel. I'm also an avid gamer and
-                                love to attend conventions and events.
+                            <div class="flex flex-col gap-6 md:w-1/2">
+                                <p class="text-brand-gray gsap-fade-up">I love to collaborate and create software that simplifies
+                                    real-world tasks. I also love to try out new things, travel, and attend conventions and events. I'm currently focused on deep learning pipelines, multi-agent systems, and production AI engineering.</p>
+                                <div class="gsap-fade-up mt-2">
+                                    <a href="resume.pdf" target="_blank" data-cursor-view class="inline-flex items-center gap-x-2 px-6 py-3 bg-brand-green text-brand-dark font-mono text-sm font-semibold rounded-full hover:bg-opacity-90 transition-all duration-300">
+                                        <span>View Full Resume</span>
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="Projects" data-section-name="Projects"
+            <section id="projects" data-section-name="projects"
                 class="relative min-h-screen w-full px-8 py-16 md:px-16 lg:px-24 flex items-center">
                 <div class="w-full max-w-7xl mx-auto grid grid-cols-1 gap-8 md:gap-16 items-start">
                     <h2 class="text-6xl md:text-8xl text-gray-500 gsap-section-title font-bold">Projects</h2>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative">
                         <p class="text-3xl md:text-4xl text-white gsap-fade-up h-fit lg:sticky top-[10rem]">Check out
-                            what I've been working on.
+                            what I've been working on.</p>
                         <div class="flex flex-col"><a href="https://github.com/sameerpashaaa/StackMind" data-cursor-view
                                 class="block py-12 border-b border-gray-800 gsap-fade-up group" target="_blank"><span
                                     class="text-4xl lg:text-sm text-gray-600 mb-4 block">01</span>
@@ -106,21 +144,35 @@
                                     class="text-3xl md:text-5xl xl:text-7xl font-medium text-white mb-4 transition-colors group-hover:text-brand-green">
                                     StackMind</h3>
                                 <p class="text-brand-gray max-w-md">A multi-modal problem solving tool with reasoning
-                                    powered by AI(Mistral API).</p>
-                            </a><a href="https://github.com/sameerpashaaa/ANPR" data-cursor-view
+                                    powered by AI (Mistral API).</p>
+                            </a><a href="https://github.com/sameerpashaaa/AdviserAI" data-cursor-view
                                 class="block py-12 border-b border-gray-800 gsap-fade-up group" target="_blank"><span
                                     class="text-4xl lg:text-sm text-gray-600 mb-4 block">02</span>
                                 <h3
                                     class="text-3xl md:text-5xl xl:text-7xl font-medium text-white mb-4 transition-colors group-hover:text-brand-green">
-                                    ANPR</h3>
-                                <p class="text-brand-gray max-w-md">A automatic number plate recognition software powered by a Darknet model trained using 15,000+ images.</p>
-                            </a><a href="https://github.com/sameerpashaaa/Restaurent_AI" data-cursor-view
+                                    Adviser AI</h3>
+                                <p class="text-brand-gray max-w-md">A multi-agent AI advisory platform simulating McKinsey consultant and VC intelligence to turn startup ideas into structured strategies.</p>
+                            </a><a href="https://github.com/sameerpashaaa/EHR" data-cursor-view
                                 class="block py-12 border-b border-gray-800 gsap-fade-up group" target="_blank"><span
                                     class="text-4xl lg:text-sm text-gray-600 mb-4 block">03</span>
                                 <h3
                                     class="text-3xl md:text-5xl xl:text-7xl font-medium text-white mb-4 transition-colors group-hover:text-brand-green">
-                                    Restaurant AI </h3>
-                                <p class="text-brand-gray max-w-md">AI powered restaurent reservtion system with real time weather data and reservation dashboard using SQlite.</p>
+                                    Metapharsic EHR</h3>
+                                <p class="text-brand-gray max-w-md">A Next.js electronic health record MVP with clinical dashboards, AI-assisted prescription, and voice-assisted scribe workflows.</p>
+                            </a><a href="https://github.com/sameerpashaaa/ANPR" data-cursor-view
+                                class="block py-12 border-b border-gray-800 gsap-fade-up group" target="_blank"><span
+                                    class="text-4xl lg:text-sm text-gray-600 mb-4 block">04</span>
+                                <h3
+                                    class="text-3xl md:text-5xl xl:text-7xl font-medium text-white mb-4 transition-colors group-hover:text-brand-green">
+                                    ANPR</h3>
+                                <p class="text-brand-gray max-w-md">An automatic number plate recognition software powered by a Darknet model trained using 15,000+ images.</p>
+                            </a><a href="https://github.com/sameerpashaaa/Restaurent_AI" data-cursor-view
+                                class="block py-12 border-b border-gray-800 gsap-fade-up group" target="_blank"><span
+                                    class="text-4xl lg:text-sm text-gray-600 mb-4 block">05</span>
+                                <h3
+                                    class="text-3xl md:text-5xl xl:text-7xl font-medium text-white mb-4 transition-colors group-hover:text-brand-green">
+                                    Restaurant AI</h3>
+                                <p class="text-brand-gray max-w-md">AI-powered restaurant reservation system with real-time weather integration and SQLite database dashboard.</p>
                             </a></div>
                     </div>
                 </div>
@@ -137,83 +189,112 @@
                                 <div class="flex flex-col"><span class="text-sm text-gray-600 mb-4">01</span>
                                     <h3 class="font-mono text-4xl md:text-5xl text-white">&lt;Coding /&gt;</h3>
                                     <p class="text-brand-gray mt-4 text-sm">These are all of the programming languages I
-                                        have experience with.
+                                        have experience with.</p>
                                 </div>
                                 <ul class="md:col-span-2 flex flex-col">
                                     <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
                                             class="text-lg">Python</span> <span class="text-gray-600"><img
-                                                src="images\python-com.svg" loading="lazy" alt=""
-                                                class="image-pro invert"></span>
+                                                src="images/python-com.svg" loading="lazy" alt="Python logo"
+                                                class="image-pro invert"></span></li>
                                     <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
                                             class="text-lg">Java</span> <span class="text-gray-600"><img
-                                                src="images/java-logo.svg" loading="lazy" alt=""
-                                                class="image-pro"></span>
+                                                src="images/java-logo.svg" loading="lazy" alt="Java logo"
+                                                class="image-pro"></span></li>
                                     <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
                                             class="text-lg">SQL</span> <span class="text-gray-600"><img
-                                                src="images/database-512.svg" loading="lazy" alt="" class="image-pro"></span>
+                                                src="images/database-512.svg" loading="lazy" alt="SQL database logo" class="image-pro"></span></li>
                                     <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
                                             class="text-lg">HTML</span> <span class="text-gray-600"><img
-                                                src="images/html-logo.svg" loading="lazy" alt="" class="image-pro"></span>
+                                                src="images/html-logo.svg" loading="lazy" alt="HTML logo" class="image-pro"></span></li>
                                     <li class="flex justify-between items-center py-4"><span
                                             class="text-lg">CSS</span> <span class="text-gray-600"><img
-                                                src="images/css_logo.svg" loading="lazy" alt=""
-                                                class="image-pro"></span>
+                                                src="images/css_logo.svg" loading="lazy" alt="CSS logo"
+                                                class="image-pro"></span></li>
                                 </ul>
                             </div>
                             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 gsap-fade-up">
                                 <div class="flex flex-col"><span class="text-sm text-gray-600 mb-4">02</span>
                                     <h3 class="font-mono text-4xl md:text-5xl text-white">{ DevOps }</h3>
-                                    <p class="text-brand-gray mt-4 text-sm">Tools I Projects with to deploy the apps & scale
-                                        it.
+                                    <p class="text-brand-gray mt-4 text-sm">Tools I use to deploy and scale applications.</p>
                                 </div>
                                 <ul class="md:col-span-2 flex flex-col">
                                     <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
                                             class="text-lg">Oracle Cloud</span> <span class="text-gray-600"><img
-                                                src="images/oracl-logo.svg" loading="lazy" alt="" class="image-pro"></span>
+                                                src="images/oracl-logo.svg" loading="lazy" alt="Oracle Cloud Infrastructure logo" class="image-pro"></span></li>
                                     <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
                                             class="text-lg">Docker</span> <span class="text-gray-600"><img
-                                                src="images/docker.svg" loading="lazy" alt="" class="image-pro"></span>
+                                                src="images/docker.svg" loading="lazy" alt="Docker logo" class="image-pro"></span></li>
                                     <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
                                             class="text-lg">Github Actions</span> <span class="text-gray-600"><img
-                                                src="images/github.svg" loading="lazy" alt="" class="image-pro"></span>
+                                                src="images/github.svg" loading="lazy" alt="GitHub logo" class="image-pro"></span></li>
                                     <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
                                             class="text-lg">AWS</span> <span class="text-gray-600"><img
-                                                src="images/aws.svg" loading="lazy" alt=""
-                                                class="image-pro"></span>
+                                                src="images/aws.svg" loading="lazy" alt="AWS logo"
+                                                class="image-pro"></span></li>
                                     <li class="flex justify-between items-center py-4"><span class="text-lg">Jupyter</span>
-                                        <span class="text-gray-600"><img src="images/jupyter-logo.svg" loading="lazy" alt=""
-                                                class="image-pro"></span>
+                                        <span class="text-gray-600"><img src="images/jupyter-logo.svg" loading="lazy" alt="Jupyter logo"
+                                                class="image-pro"></span></li>
                                 </ul>
                             </div>
                             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 gsap-fade-up">
                                 <div class="flex flex-col"><span class="text-sm text-gray-600 mb-4">03</span>
+                                    <h3 class="font-mono text-4xl md:text-5xl text-white">[ Machine Learning / AI ]</h3>
+                                    <p class="text-brand-gray mt-4 text-sm">Libraries and frameworks I use to build and deploy intelligent models.</p>
+                                </div>
+                                <ul class="md:col-span-2 flex flex-col">
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">PyTorch</span> <span class="text-gray-600"><img
+                                                src="images/pytorch.svg" loading="lazy" alt="PyTorch logo"
+                                                class="image-pro invert"></span></li>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">TensorFlow</span> <span class="text-gray-600"><img
+                                                src="images/tensorflow.svg" loading="lazy" alt="TensorFlow logo"
+                                                class="image-pro invert"></span></li>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">scikit-learn</span> <span class="text-gray-600"><img
+                                                src="images/scikitlearn.svg" loading="lazy" alt="scikit-learn logo"
+                                                class="image-pro invert"></span></li>
+                                    <li class="flex justify-between items-center py-4 border-b border-gray-800"><span
+                                            class="text-lg">LangChain & RAG</span> <span class="text-gray-600"><img
+                                                src="images/langchain.svg" loading="lazy" alt="LangChain logo"
+                                                class="image-pro invert"></span></li>
+                                    <li class="flex justify-between items-center py-4"><span
+                                            class="text-lg">Computer Vision (OpenCV / YOLO)</span> <span class="text-gray-600"><img
+                                                src="images/python-com.svg" loading="lazy" alt="Computer Vision"
+                                                class="image-pro invert"></span></li>
+                                </ul>
+                            </div>
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 gsap-fade-up">
+                                <div class="flex flex-col"><span class="text-sm text-gray-600 mb-4">04</span>
                                     <h3 class="font-display text-5xl md:text-6xl text-white">Certifications</h3>
-                                    <p class="text-brand-gray mt-4 text-sm">Certifications I have acquired for the
-                                        programming languages.
+                                    <p class="text-brand-gray mt-4 text-sm">Certifications I have acquired for my professional domains.</p>
                                 </div>
                                 <ul class="md:col-span-2 flex flex-col">
                                     <li><a href="https://www.udemy.com/certificate/UC-a0b05553-072c-436f-a7c9-1c626db2c80a/"
                                             target="_blank"
                                             class="flex justify-between items-center py-4 border-b border-gray-800 hover:text-brand-green transition-colors"><span
-                                                class="text-lg">Python</span> <span class="text-gray-600"><img
-                                                    src="images/arrow-up-right-solid.svg" loading="lazy" alt=""
-                                                    class="arrow-link"></span></a>
+                                                class="text-lg">Udemy Python Certificate — November 2024</span> <span class="text-gray-600"><img
+                                                    src="images/arrow-up-right-solid.svg" loading="lazy" alt="External link"
+                                                    class="arrow-link"></span></a></li>
                                     <li><a class="flex justify-between items-center py-4 border-b border-gray-800 hover:text-brand-green transition-colors"
-                                            href="https://drive.google.com/file/d/12hU-tcgbVARUM7YV6_6c4z-7xpn1eKLJ/view?usp=sharing"
-                                            target="_blank"><span class="text-lg">Oracle Cloud Infrastructure</span> <span
+                                            href="certs/oraclecert.pdf"
+                                            target="_blank"><span class="text-lg">Oracle Cloud Infrastructure Certificate — September 2025</span> <span
                                                 class="text-gray-600"><img src="images/arrow-up-right-solid.svg"
-                                                    loading="lazy" alt="" class="arrow-link"></span></a>
+                                                    loading="lazy" alt="Open PDF"
+                                                    class="arrow-link"></span></a></li>
                                     <li><a class="flex justify-between items-center py-4 border-b border-gray-800 hover:text-brand-green transition-colors"
-                                            href="https://www.theforage.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_Y7JWBqjTKgAzmiE6D_1752990701382_completion_certificate.pdf"
-                                            target="_blank"><span class="text-lg">AWS Solutions Architect</span> <span
+                                            href="certs/AWScertificate.pdf"
+                                            target="_blank"><span class="text-lg">AWS Solutions Architect (Virtual Experience) — July 2025</span> <span
                                                 class="text-gray-600"><img src="images/arrow-up-right-solid.svg"
-                                                    loading="lazy" alt="" class="arrow-link"></span></a>
-                                    <li><a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_Y7JWBqjTKgAzmiE6D_1752924185583_completion_certificate.pdf"
+                                                    loading="lazy" alt="Open PDF"
+                                                    class="arrow-link"></span></a></li>
+                                    <li><a href="certs/DeloitteCertificate.pdf"
                                             target="_blank"
                                             class="flex justify-between items-center py-4 border-b border-gray-800 hover:text-brand-green transition-colors"><span
-                                                class="text-lg">Deloitte Tech Support</span> <span
+                                                class="text-lg">Deloitte Tech Support (Virtual Experience) — July 2025</span> <span
                                                 class="text-gray-600"><img src="images/arrow-up-right-solid.svg"
-                                                    loading="lazy" alt="" class="arrow-link"></span></a>
+                                                    loading="lazy" alt="Open PDF"
+                                                    class="arrow-link"></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -237,7 +318,7 @@
             </section>
             <section id="contact" data-section-name="contact"
                 class="min-h-[70svh] lg:min-h-[120vh] flex flex-col p-8 lg:p-12 relative">
-                <div class="flex flex-col items-center gap-12 pt-12 w-full">
+                <div class="flex flex-col items-center gap-12 pt-12 w-full z-10">
                     <div id="robo-container" data-w-id="f6618769-8942-5196-c2a1-07d3bb1949d6"
                         class="spline-scene-3 top-0 absolute -z-10 hidden md:block" data-animation-type="spline"
                         data-spline-url="https://prod.spline.design/8yucdOU58ZA1qCif/scene.splinecode"><canvas></canvas>
@@ -254,22 +335,42 @@
                                 class="hover:text-white transition-colors">leetcode</a></div>
                     </nav>
                 </div>
-                <div class="flex-grow flex items-center justify-center">
-                    <h1 id="footer-text"
+                <div class="w-full max-w-lg mx-auto bg-brand-dark/40 backdrop-blur-md border border-gray-800 p-8 rounded-xl space-y-6 mt-12 gsap-fade-up z-10">
+                    <h3 class="text-2xl font-mono text-white text-center mb-6">Send a Message</h3>
+                    <form action="https://formspree.io/f/xoqgqpww" method="POST" class="space-y-4">
+                        <div>
+                            <label for="contact-name" class="block text-sm font-mono text-gray-400 mb-2">Name</label>
+                            <input type="text" id="contact-name" name="name" required class="w-full bg-brand-dark border border-gray-800 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-green transition-colors font-mono">
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-sm font-mono text-gray-400 mb-2">Email Address</label>
+                            <input type="email" id="contact-email" name="email" required class="w-full bg-brand-dark border border-gray-800 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-green transition-colors font-mono">
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-sm font-mono text-gray-400 mb-2">Message</label>
+                            <textarea id="contact-message" name="message" rows="4" required class="w-full bg-brand-dark border border-gray-800 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-green transition-colors font-mono resize-none"></textarea>
+                        </div>
+                        <button type="submit" data-cursor-view class="w-full py-3 bg-brand-green text-brand-dark font-semibold rounded hover:bg-opacity-90 transition-colors font-mono">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="flex-grow flex items-center justify-center z-0">
+                    <h1 id="footer-text" aria-label="Sameer"
                         class="text-white text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[14rem] font-black tracking-tighter leading-none">
-                        <span class="footer-char"><span class="footer-char-stroke">s</span><span
-                                class="footer-char-fill">s</span></span><span class="footer-char"><span
+                        <span aria-hidden="true" class="footer-char"><span class="footer-char-stroke">s</span><span
+                                class="footer-char-fill">s</span></span><span aria-hidden="true" class="footer-char"><span
                                 class="footer-char-stroke">a</span><span class="footer-char-fill">a</span></span><span
-                            class="footer-char"><span class="footer-char-stroke">m</span><span
-                                class="footer-char-fill">m</span></span><span class="footer-char"><span
+                            aria-hidden="true" class="footer-char"><span class="footer-char-stroke">m</span><span
+                                class="footer-char-fill">m</span></span><span aria-hidden="true" class="footer-char"><span
                                 class="footer-char-stroke">e</span><span class="footer-char-fill">e</span></span><span
-                            class="footer-char"><span class="footer-char-stroke">e</span><span
-                                class="footer-char-fill">e</span></span><span class="footer-char"><span
-                            class="footer-char"><span class="footer-char-stroke">r</span><span class="footer-char-fill">r</span></span></h1>
+                            aria-hidden="true" class="footer-char"><span class="footer-char-stroke">e</span><span
+                                class="footer-char-fill">e</span></span><span aria-hidden="true" class="footer-char"><span
+                                class="footer-char-stroke">r</span><span class="footer-char-fill">r</span></span></h1>
                 </div>
             
-                <div class="w-full text-center pb-4">
-                    <p class="text-sm text-brand-gray">&copy; 2024 Sameer Pasha. All Rights Reserved.
+                <div class="w-full text-center pb-4 z-10">
+                    <p class="text-sm text-brand-gray">&copy; <script>document.write(new Date().getFullYear())</script> Sameer Pasha. All Rights Reserved.</p>
                 </div>
             </section>
         </main>
