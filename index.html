@@ -334,7 +334,20 @@
                 <div class="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center z-10">
                     <div class="w-full max-w-lg mx-auto bg-brand-dark/40 backdrop-blur-md border border-gray-800 p-8 rounded-xl space-y-6 gsap-fade-up">
                         <h3 class="text-2xl font-mono text-white text-center mb-6">Send a Message</h3>
-                        <form action="https://formspree.io/f/xoqgqpww" method="POST" class="space-y-4">
+                        
+                        <!-- Success Message Container -->
+                        <div id="success-message" class="hidden p-6 bg-brand-green/10 border border-brand-green/30 rounded-lg text-center font-mono space-y-4">
+                            <div class="text-brand-green text-5xl">✓</div>
+                            <h4 class="text-white text-xl font-bold">Message Sent!</h4>
+                            <p class="text-brand-gray text-sm">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                        </div>
+                        
+                        <!-- Error Message Container -->
+                        <div id="error-message" class="hidden p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-500 text-center font-mono text-sm">
+                            Oops! Something went wrong, please try again.
+                        </div>
+
+                        <form id="contact-form" action="https://formspree.io/f/xykqbgvp" method="POST" class="space-y-4">
                             <div>
                                 <label for="contact-name" class="block text-sm font-mono text-gray-400 mb-2">Name</label>
                                 <input type="text" id="contact-name" name="name" required class="w-full bg-brand-dark border border-gray-800 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-green transition-colors font-mono">
@@ -347,7 +360,7 @@
                                 <label for="contact-message" class="block text-sm font-mono text-gray-400 mb-2">Message</label>
                                 <textarea id="contact-message" name="message" rows="4" required class="w-full bg-brand-dark border border-gray-800 rounded px-4 py-3 text-white focus:outline-none focus:border-brand-green transition-colors font-mono resize-none"></textarea>
                             </div>
-                            <button type="submit" data-cursor-view class="w-full py-3 bg-brand-green text-brand-dark font-semibold rounded hover:bg-opacity-90 transition-colors font-mono">
+                            <button type="submit" data-cursor-view class="w-full py-3 bg-brand-green text-brand-dark font-semibold rounded hover:bg-opacity-90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-mono">
                                 Send Message
                             </button>
                         </form>
@@ -838,6 +851,56 @@
                 });
             }
             
+            // Contact form submit handling (Formspree AJAX)
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const form = this;
+                    const button = form.querySelector('button[type="submit"]');
+                    const successMsg = document.getElementById('success-message');
+                    const errorMsg = document.getElementById('error-message');
+                    
+                    button.disabled = true;
+                    const originalText = button.textContent;
+                    button.textContent = 'Sending...';
+                    successMsg.classList.add('hidden');
+                    errorMsg.classList.add('hidden');
+                    
+                    fetch(form.action, {
+                        method: form.method,
+                        body: new FormData(form),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            form.reset();
+                            form.classList.add('hidden');
+                            successMsg.classList.remove('hidden');
+                        } else {
+                            response.json().then(data => {
+                                if (data && data.errors) {
+                                    errorMsg.textContent = data.errors.map(err => err.message).join(", ");
+                                } else {
+                                    errorMsg.textContent = 'Oops! There was a problem submitting your form.';
+                                }
+                                errorMsg.classList.remove('hidden');
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        errorMsg.textContent = 'Oops! There was a problem connecting to the server.';
+                        errorMsg.classList.remove('hidden');
+                    })
+                    .finally(() => {
+                        button.disabled = false;
+                        button.textContent = originalText;
+                    });
+                });
+            }
+
             // Load Webflow on desktop
             if (window.matchMedia("(min-width: 768px)").matches) {
                 loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
