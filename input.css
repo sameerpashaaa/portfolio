@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #1c1c1c;
+  --color-brand-gray: #a0a0a0;
+  --color-brand-light: #f0f0f0;
+  --color-brand-green: #39ff14;
+  --font-sans: "Bdogrotesk", sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --font-display: "UnifrakturCook", cursive;
+  --background-light-brand: #fff9f0;
+}
+
+@font-face {
+    font-family: Bdogrotesk;
+    src: url(fonts/BDOGrotesk-ExtraBold.woff2) format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Bdogrotesk;
+    src: url(fonts/BDOGrotesk-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Bdogrotesk;
+    src: url(fonts/BDOGrotesk-DemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Bdogrotesk;
+    src: url(fonts/BDOGrotesk-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Bdogrotesk;
+    src: url(fonts/BDOGrotesk-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Bdogrotesk;
+    src: url(fonts/BDOGrotesk-Black.woff2) format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Bdogrotesk;
+    src: url(fonts/BDOGrotesk-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Mona Sans Narrow;
+    src: url(fonts/Mona-Sans-ExtraBoldNarrow.woff) format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Mona Sans Wide;
+    src: url(fonts/Mona-Sans-BoldWide.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Mona Sans Wide;
+    src: url(fonts/Mona-Sans-ExtraBoldWide.woff) format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.gsap-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.footer-char {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.footer-char-stroke {
+    color: #0000;
+    -webkit-text-stroke: 1px var(--color-brand-gray);
+}
+
+.footer-char-fill {
+    width: 100%;
+    height: 100%;
+    color: var(--color-brand-light);
+    -webkit-text-stroke: 1px var(--color-brand-light);
+    paint-order: stroke fill;
+    clip-path: inset(100% 0 0);
+    font-size: inherit;
+    width: calc(100% + 2rem);
+    margin-left: -2rem;
+    padding-left: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#footer-text {
+    height: 15rem;
+    display: flex;
+}
+
+#hero-name.glitch {
+    text-shadow: 0 0 1px #a855f780, 2px 0 #a855f7cc, -2px 0 #ec489999;
+    animation: .4s steps(2, end) infinite glitch-jitter;
+}
+
+@keyframes glitch-jitter {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-1px) skew(1.5deg);
+    }
+    40% {
+        transform: translate(1px) skew(-1.5deg);
+    }
+    60% {
+        transform: translateY(1px);
+    }
+    80% {
+        transform: translateY(-1px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+.particle {
+    pointer-events: none;
+    will-change: transform, opacity;
+    mix-blend-mode: screen;
+    z-index: 9998;
+    background: radial-gradient(circle, #a855f7, #6d28d9);
+    border-radius: 9999px;
+    width: 6px;
+    height: 6px;
+    position: fixed;
+    box-shadow: 0 0 8px #a855f7cc, 0 0 16px #a855f780;
+}
+
+.image-pro {
+    width: 2rem;
+}
+
+.arrow-link {
+    width: 1rem;
+}
